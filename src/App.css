@@ -1,86 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+	background-color: #090909;
 	color: white;
-	background-color: #090909;
-}
-
-.bio {
-	padding: 1rem;
-}
-
-.container {
-	display: flex;
-}
-
-.gallery-container {
-	width: 100%;
-}
-
-.gallery-column {
-	margin: 5px;
-}
-
-.image-container {
-	width: 100%;
-	column-count: 6;
-	column-gap: 5px;
-}
-
-.sidebar {
-	background-color: #090909;
-	width: 300px;
-}
-
-.title {
-	padding: 1rem 0 0.2rem 1rem;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
-}
-
-.username {
-	padding: 0 1rem;
-	margin: 0;
-}
-
-.profile-pic {
-	width: 100%;
-}
-
-@media screen and (max-width: 1930px) {
-	.image-container {
-		column-count: 5;
-	}
-}
-
-@media screen and (max-width: 1520px) {
-	.image-container {
-		column-count: 4;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.image-container {
-		column-count: 3;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.image-container {
-		column-count: 2;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.container {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.sidebar {
-		width: 100%;
-	}
 }
