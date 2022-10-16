@@ -1,76 +1,68 @@
-.bio {
-	padding: 1rem;
+// Mixin
+@mixin mQ($arg) {
+	@media screen and (max-width: $arg) {
+		@content;
+	}
 }
+// End Mixin
 
 .container {
 	display: flex;
-}
-
-.gallery-container {
-	width: 100%;
-}
-
-.gallery-column {
-	margin: 5px;
-}
-
-.image-container {
-	width: 100%;
-	column-count: 6;
-	column-gap: 5px;
-}
-
-.sidebar {
-	background-color: #090909;
-	width: 300px;
-}
-
-.title {
-	padding: 1rem 0 0.2rem 1rem;
-	margin: 0;
-}
-
-.username {
-	padding: 0 1rem;
-	margin: 0;
-}
-
-.profile-pic {
-	width: 100%;
-}
-
-@media screen and (max-width: 1930px) {
-	.image-container {
-		column-count: 5;
-	}
-}
-
-@media screen and (max-width: 1520px) {
-	.image-container {
-		column-count: 4;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.image-container {
-		column-count: 3;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.image-container {
-		column-count: 2;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.container {
+	@include mQ(480px) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.sidebar {
+	.gallery-container {
 		width: 100%;
+
+		.gallery-column {
+			margin: 5px;
+
+			.image-container {
+				width: 100%;
+				column-count: 6;
+				column-gap: 5px;
+				@include mQ(1930px) {
+					column-count: 5;
+				}
+				@include mQ(1520px) {
+					column-count: 4;
+				}
+				@include mQ(992px) {
+					column-count: 3;
+				}
+				@include mQ(768px) {
+					column-count: 2;
+				}
+			}
+		}
+	}
+
+	.sidebar {
+		background-color: #090909;
+		width: 300px;
+		@include mQ(480px) {
+			width: 100%;
+		}
+
+		.bio {
+			padding: 1rem;
+		}
+
+		.profile-pic {
+			width: 100%;
+		}
+
+		.title {
+			padding: 1rem 0 0.2rem 1rem;
+			margin: 0;
+		}
+
+		.username {
+			padding: 0 1rem;
+			margin: 0;
+		}
 	}
 }

@@ -1,69 +1,5 @@
-.bio {
-  padding: 1rem;
-}
-
 .container {
   display: flex;
-}
-
-.gallery-container {
-  width: 100%;
-}
-
-.gallery-column {
-  margin: 5px;
-}
-
-.image-container {
-  width: 100%;
-  -moz-column-count: 6;
-       column-count: 6;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
-}
-
-.sidebar {
-  background-color: #090909;
-  width: 300px;
-}
-
-.title {
-  padding: 1rem 0 0.2rem 1rem;
-  margin: 0;
-}
-
-.username {
-  padding: 0 1rem;
-  margin: 0;
-}
-
-.profile-pic {
-  width: 100%;
-}
-
-@media screen and (max-width: 1930px) {
-  .image-container {
-    -moz-column-count: 5;
-         column-count: 5;
-  }
-}
-@media screen and (max-width: 1520px) {
-  .image-container {
-    -moz-column-count: 4;
-         column-count: 4;
-  }
-}
-@media screen and (max-width: 992px) {
-  .image-container {
-    -moz-column-count: 3;
-         column-count: 3;
-  }
-}
-@media screen and (max-width: 768px) {
-  .image-container {
-    -moz-column-count: 2;
-         column-count: 2;
-  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -71,7 +7,64 @@
     justify-content: center;
     align-items: center;
   }
-  .sidebar {
+}
+.container .gallery-container {
+  width: 100%;
+}
+.container .gallery-container .gallery-column {
+  margin: 5px;
+}
+.container .gallery-container .gallery-column .image-container {
+  width: 100%;
+  -moz-column-count: 6;
+       column-count: 6;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+@media screen and (max-width: 1930px) {
+  .container .gallery-container .gallery-column .image-container {
+    -moz-column-count: 5;
+         column-count: 5;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .container .gallery-container .gallery-column .image-container {
+    -moz-column-count: 4;
+         column-count: 4;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container .gallery-container .gallery-column .image-container {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .gallery-container .gallery-column .image-container {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+.container .sidebar {
+  background-color: #090909;
+  width: 300px;
+}
+@media screen and (max-width: 480px) {
+  .container .sidebar {
     width: 100%;
   }
+}
+.container .sidebar .bio {
+  padding: 1rem;
+}
+.container .sidebar .profile-pic {
+  width: 100%;
+}
+.container .sidebar .title {
+  padding: 1rem 0 0.2rem 1rem;
+  margin: 0;
+}
+.container .sidebar .username {
+  padding: 0 1rem;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */
