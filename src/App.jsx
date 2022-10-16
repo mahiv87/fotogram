@@ -3,7 +3,7 @@ import { useState } from 'react';
 import profilePic from './assets/me.png';
 import './App.css';
 
-import ImageComponent from './components/ImageComponent';
+import ImageComponent from './components/ImageComponent/ImageComponent';
 
 let date = new Date(Date.now()).toLocaleString();
 
