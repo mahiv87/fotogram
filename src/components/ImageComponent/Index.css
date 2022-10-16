@@ -27,7 +27,7 @@
 .image-link .image-info .image-date {
   font-size: 12px;
 }
-.image-link .image-infohover {
+.image-link .image-info:hover {
   background: linear-gradient(transparent, transparent 70%, rgba(0, 0, 0, 0.8));
   color: #fff;
   justify-content: flex-end;

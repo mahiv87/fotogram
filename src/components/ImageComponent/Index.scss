@@ -1,5 +1,6 @@
 // Variables
 $max: 100%;
+// End Variables
 
 // Mixins
 @mixin image-info {
@@ -18,6 +19,7 @@ $max: 100%;
 		font-size: 12px;
 	}
 }
+// End Mixins
 
 .image-link {
 	position: relative;
@@ -35,7 +37,7 @@ $max: 100%;
 
 	.image-info {
 		@include image-info;
-		&hover {
+		&:hover {
 			background: linear-gradient(transparent, transparent 70%, rgba(0, 0, 0, 0.8));
 			color: #fff;
 			justify-content: flex-end;

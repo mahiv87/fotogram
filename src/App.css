@@ -83,8 +83,4 @@ body {
 	.sidebar {
 		width: 100%;
 	}
-
-	.image-container {
-		column-count: 1;
-	}
 }
