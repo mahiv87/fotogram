@@ -1,3 +1,24 @@
+// Variables
+$max: 100%;
+
+// Mixins
+@mixin image-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	gap: 4px;
+	width: $max;
+	opacity: 0;
+
+	.image-date {
+		font-size: 12px;
+	}
+}
+
 .image-link {
 	position: relative;
 	overflow: hidden;
@@ -6,27 +27,14 @@
 	margin-bottom: 5px;
 	break-inside: avoid;
 
-	.image-date {
-		font-size: 12px;
-	}
-
 	.image {
 		grid-row: 1 / -1;
 		grid-column: 1;
-		width: 100%;
+		width: $max;
 	}
 
 	.image-info {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		display: flex;
-		flex-direction: column;
-		opacity: 0;
-		gap: 4px;
-		width: 100%;
-		opacity: 0;
+		@include image-info;
 	}
 
 	.image-info:hover {
