@@ -106,23 +106,25 @@ function App() {
 				</div>
 				<div className="gallery-container">
 					<div className="gallery-column">
-						{randomImages &&
-							randomImages.map((image) => (
-								<ImageComponent image={image.image} description={image.description} date={image.date} />
-							))}
+						<div className="image-container">
+							{randomImages &&
+								randomImages.map((image) => (
+									<ImageComponent image={image.image} description={image.description} date={image.date} />
+								))}
+							{randomImagesTwo &&
+								randomImagesTwo.map((image) => (
+									<ImageComponent image={image.image} description={image.description} date={image.date} />
+								))}
+							{randomImagesThree &&
+								randomImagesThree.map((image) => (
+									<ImageComponent image={image.image} description={image.description} date={image.date} />
+								))}
+						</div>
+					</div>
+					{/* <div className="gallery-column">
 					</div>
 					<div className="gallery-column">
-						{randomImagesTwo &&
-							randomImagesTwo.map((image) => (
-								<ImageComponent image={image.image} description={image.description} date={image.date} />
-							))}
-					</div>
-					<div className="gallery-column">
-						{randomImagesThree &&
-							randomImagesThree.map((image) => (
-								<ImageComponent image={image.image} description={image.description} date={image.date} />
-							))}
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

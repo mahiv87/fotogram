@@ -17,23 +17,26 @@ body {
 }
 
 .gallery-container {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	grid-column-gap: 10px;
-	align-items: start;
-	transition: all 500ms ease;
+	width: 100%;
 }
 
 .gallery-column {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr);
-	row-gap: 5px;
+	margin: 5px;
 }
 
 .image-container {
-	display: flex;
+	width: 100%;
+	column-count: 6;
+	column-gap: 5px;
+}
+
+.image-link {
 	position: relative;
 	overflow: hidden;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	margin-bottom: 5px;
+	break-inside: avoid;
 }
 
 .image-date {
@@ -41,7 +44,9 @@ body {
 }
 
 .image {
-	max-width: 400px;
+	grid-row: 1 / -1;
+	grid-column: 1;
+	width: 100%;
 }
 
 .image-info {
@@ -53,7 +58,7 @@ body {
 	flex-direction: column;
 	opacity: 0;
 	gap: 4px;
-	max-width: 400px;
+	width: 100%;
 	opacity: 0;
 }
 
@@ -83,72 +88,45 @@ body {
 }
 
 .profile-pic {
-	width: 300px;
+	width: 100%;
 }
 
-@media screen and (max-width: 1190px) {
-	.gallery-container {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
-	/* .image {
-		min-width: 400px;
-	} */
-}
-
-@media screen and (max-width: 890px) {
-	.gallery-container {
-		grid-template-columns: repeat(1, minmax(0, 1fr));
+@media screen and (max-width: 1930px) {
+	.image-container {
+		column-count: 5;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1520px) {
+	.image-container {
+		column-count: 4;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.image-container {
+		column-count: 3;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.image-container {
+		column-count: 2;
+	}
+}
+
+@media screen and (max-width: 480px) {
 	.container {
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 	}
-}
 
-/* =================================================================================== */
-
-/* #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
-}
-
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
+	.sidebar {
+		width: 100%;
 	}
-	to {
-		transform: rotate(360deg);
+
+	.image-container {
+		column-count: 1;
 	}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-
-.card {
-	padding: 2em;
-}
-
-.read-the-docs {
-	color: #888;
-} */

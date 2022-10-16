@@ -2,7 +2,7 @@ import React from 'react';
 
 function ImageComponent(props) {
 	return (
-		<div className="image-container">
+		<>
 			<a href={props.image} className="image-link">
 				<img className="image" src={props.image} alt="random image" />
 				<div className="image-info">
@@ -10,7 +10,7 @@ function ImageComponent(props) {
 					<span className="image-date">{props.date}</span>
 				</div>
 			</a>
-		</div>
+		</>
 	);
 }
 
