@@ -29,7 +29,7 @@ function App() {
 		// </Router>
 		<div className="App">
 			{/* <Profile /> */}
-			<Photo />
+			<Profile />
 		</div>
 	);
 }
