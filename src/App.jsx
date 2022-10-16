@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 import Photo from './components/Photo/Photo';
 import Profile from './screens/Profile/Profile';
 
@@ -28,7 +29,7 @@ function App() {
 		// 	</Routes>
 		// </Router>
 		<div className="App">
-			{/* <Profile /> */}
+			{/* <NavBar /> */}
 			<Profile />
 		</div>
 	);
