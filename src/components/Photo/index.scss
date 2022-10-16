@@ -1,0 +1,43 @@
+// Variables
+$font: 24px;
+
+.foto-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+
+	.foto-side {
+		padding: 0 1rem;
+
+		.user {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			img {
+				width: 5rem;
+				border-radius: 2.5rem;
+				margin-right: 1rem;
+			}
+
+			p {
+				font-size: $font;
+			}
+		}
+
+		.foto-info {
+			width: 20rem;
+
+			.foto-description {
+				font-size: $font;
+			}
+
+			.foto-meta {
+				span {
+					color: #757575;
+					padding-left: 1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.foto-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.foto-container .foto-side {
+  padding: 0 1rem;
+}
+.foto-container .foto-side .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.foto-container .foto-side .user img {
+  width: 5rem;
+  border-radius: 2.5rem;
+  margin-right: 1rem;
+}
+.foto-container .foto-side .user p {
+  font-size: 24px;
+}
+.foto-container .foto-side .foto-info {
+  width: 20rem;
+}
+.foto-container .foto-side .foto-info .foto-description {
+  font-size: 24px;
+}
+.foto-container .foto-side .foto-info .foto-meta span {
+  color: #757575;
+  padding-left: 1rem;
+}/*# sourceMappingURL=index.css.map */

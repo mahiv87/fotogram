@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ImageComponent from '../components/ImageComponent/ImageComponent';
+import ImageComponent from '../../components/ImageComponent/ImageComponent';
 import './index.scss';
-import profilePic from '../assets/me.png';
+import profilePic from '../../assets/me.png';
 
 let date = new Date(Date.now()).toLocaleString();
 
