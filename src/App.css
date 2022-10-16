@@ -30,48 +30,6 @@ body {
 	column-gap: 5px;
 }
 
-/* .image-link {
-	position: relative;
-	overflow: hidden;
-	display: grid;
-	grid-template-rows: 1fr auto;
-	margin-bottom: 5px;
-	break-inside: avoid;
-}
-
-.image-date {
-	font-size: 12px;
-}
-
-.image {
-	grid-row: 1 / -1;
-	grid-column: 1;
-	width: 100%;
-}
-
-.image-info {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	display: flex;
-	flex-direction: column;
-	opacity: 0;
-	gap: 4px;
-	width: 100%;
-	opacity: 0;
-}
-
-.image-info:hover {
-	background: linear-gradient(transparent, transparent 70%, rgba(0, 0, 0, 0.8));
-	color: #fff;
-	justify-content: flex-end;
-	opacity: 0;
-	padding: 0 16px 20px;
-	right: 0;
-	opacity: 1;
-} */
-
 .sidebar {
 	background-color: #090909;
 	width: 300px;
