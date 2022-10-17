@@ -43,6 +43,7 @@
 	.sidebar {
 		background-color: #090909;
 		width: 300px;
+		font-weight: 300;
 		@include mQ(480px) {
 			width: 100%;
 		}
@@ -58,15 +59,13 @@
 		.title {
 			padding: 1rem 0 0.2rem 1rem;
 			margin: 0;
+			font-weight: 300;
 		}
 
 		.username {
 			padding: 0 1rem;
 			margin: 0;
+			font-weight: 300;
 		}
-	}
-
-	.title {
-		font-weight: 300;
 	}
 }

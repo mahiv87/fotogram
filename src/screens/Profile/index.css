@@ -48,6 +48,7 @@
 .container .sidebar {
   background-color: #090909;
   width: 300px;
+  font-weight: 300;
 }
 @media screen and (max-width: 480px) {
   .container .sidebar {
@@ -63,11 +64,10 @@
 .container .sidebar .title {
   padding: 1rem 0 0.2rem 1rem;
   margin: 0;
+  font-weight: 300;
 }
 .container .sidebar .username {
   padding: 0 1rem;
   margin: 0;
-}
-.container .title {
   font-weight: 300;
 }/*# sourceMappingURL=index.css.map */
