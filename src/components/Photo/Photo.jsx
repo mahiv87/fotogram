@@ -1,5 +1,5 @@
 import React from 'react';
-import { CameraAlt, Camera, CalendarToday, Exposure, Label } from '@mui/icons-material';
+import { CameraAlt, Camera, CalendarToday, Exposure, Label, Close } from '@mui/icons-material';
 
 import './index.scss';
 import profilePic from '../../assets/me.png';
@@ -10,7 +10,7 @@ function Photo(props) {
 			<div className="foto-side">
 				<div className="user">
 					<img src={profilePic} alt="user avatar" />
-					<p>Marcus Herrera</p>
+					<h2>Marcus Herrera</h2>
 				</div>
 				<div className="foto-info">
 					<p className="foto-description">{props.description}</p>
@@ -34,6 +34,9 @@ function Photo(props) {
 				</div>
 			</div>
 			<img className="foto-image" src={props.image} alt="foto" />
+			<div className="close" onClick={props.close}>
+				<Close />
+			</div>
 		</div>
 	);
 }

@@ -31,10 +31,7 @@ const randomImages = [
 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!5',
 		date: `${date}`
-	}
-];
-
-const randomImagesTwo = [
+	},
 	{
 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!6',
@@ -59,10 +56,7 @@ const randomImagesTwo = [
 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!10',
 		date: `${date}`
-	}
-];
-
-const randomImagesThree = [
+	},
 	{
 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!11',
@@ -90,6 +84,62 @@ const randomImagesThree = [
 	}
 ];
 
+// const randomImagesTwo = [
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!6',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!7',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!8',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!9',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!10',
+// 		date: `${date}`
+// 	}
+// ];
+
+// const randomImagesThree = [
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!11',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!12',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!13',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!14',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!15',
+// 		date: `${date}`
+// 	}
+// ];
+
 function Profile() {
 	return (
 		<div className="container">
@@ -109,14 +159,14 @@ function Profile() {
 							randomImages.map((image) => (
 								<ImageComponent image={image.image} description={image.description} date={image.date} />
 							))}
-						{randomImagesTwo &&
+						{/* {randomImagesTwo &&
 							randomImagesTwo.map((image) => (
 								<ImageComponent image={image.image} description={image.description} date={image.date} />
 							))}
 						{randomImagesThree &&
 							randomImagesThree.map((image) => (
 								<ImageComponent image={image.image} description={image.description} date={image.date} />
-							))}
+							))} */}
 					</div>
 				</div>
 			</div>

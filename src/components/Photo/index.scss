@@ -1,5 +1,11 @@
 // Variables
-$font: 24px;
+$font: 16px;
+$black: #000;
+
+// Mixin
+// @mixin foto($ratio) {
+// 	@if $ratio ;
+// }
 
 .foto-container {
 	height: 100vh;
@@ -9,14 +15,14 @@ $font: 24px;
 	justify-content: center;
 
 	.foto-image {
-		height: 800px;
+		height: 600px;
 		align-self: center;
 	}
 
 	.foto-side {
 		margin: 0 1rem;
 		padding: 1rem;
-		background-color: black;
+		background-color: $black;
 
 		.user {
 			display: flex;
@@ -27,10 +33,6 @@ $font: 24px;
 				width: 5rem;
 				border-radius: 2.5rem;
 				margin-right: 1rem;
-			}
-
-			p {
-				font-size: $font;
 			}
 		}
 
@@ -47,6 +49,21 @@ $font: 24px;
 					padding-left: 1rem;
 				}
 			}
+		}
+	}
+
+	.close {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+		background-color: $black;
+		height: 2rem;
+		width: 2rem;
+		border-radius: 1rem;
+		transition: all ease-in-out 300ms;
+		&:hover {
+			border-radius: 0.5rem;
 		}
 	}
 }
