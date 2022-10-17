@@ -12,8 +12,8 @@ $black: #000;
 
 .foto-container {
 	height: 100vh;
-	background-color: rgba(33, 33, 33, 0.5);
-	backdrop-filter: blur(5px);
+	background-color: rgba(33, 33, 33, 0.2);
+	backdrop-filter: blur(10px);
 	display: flex;
 	justify-content: center;
 	@include mQ(480px) {
