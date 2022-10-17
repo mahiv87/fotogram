@@ -1,0 +1,14 @@
+.upload-container {
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.upload-container label {
+  background-color: white;
+  width: 350px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

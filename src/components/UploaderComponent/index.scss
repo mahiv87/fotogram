@@ -1,0 +1,14 @@
+.upload-container {
+	height: 100vh;
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	label {
+		background-color: white;
+		width: 350px;
+		box-sizing: border-box;
+	}
+}

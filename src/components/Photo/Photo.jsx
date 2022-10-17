@@ -1,7 +1,7 @@
 import React from 'react';
 import { CameraAlt, Camera, CalendarToday, Exposure, Label } from '@mui/icons-material';
 
-import './index.scss';
+import './index.css';
 import profilePic from '../../assets/me.png';
 
 function Photo(props) {

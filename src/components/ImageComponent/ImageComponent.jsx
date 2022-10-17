@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '@mui/material/Modal';
 
-import './index.scss';
+import './index.css';
 import Photo from '../Photo/Photo';
 
 function ImageComponent(props) {

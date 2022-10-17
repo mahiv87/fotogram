@@ -1,0 +1,10 @@
+.nav-bar {
+	height: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	.upload-icon {
+		margin: 0 1rem;
+	}
+}

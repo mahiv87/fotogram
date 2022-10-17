@@ -1,0 +1,9 @@
+.nav-bar {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-bar .upload-icon {
+  margin: 0 1rem;
+}/*# sourceMappingURL=index.css.map */
