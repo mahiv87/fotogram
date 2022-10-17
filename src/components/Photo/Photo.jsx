@@ -1,26 +1,12 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import { CameraAlt, Camera, CalendarToday, Exposure, Label } from '@mui/icons-material';
 
 import './index.scss';
 import profilePic from '../../assets/me.png';
 
-let date = new Date(Date.now()).toLocaleString();
-
-const image = {
-	image: `https://picsum.photos/800/1000?random=${Math.random()}`,
-	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reprehenderit delectus fugit tenetur maiores eligendi culpa sit earum dolores? Corporis.',
-	date: `${date}`
-};
-
 function Photo(props) {
-	// const location = useLocation();
-	// const { from } = location.state;
-
 	return (
 		<div className="foto-container">
-			<img src={props.image} alt="foto" />
 			<div className="foto-side">
 				<div className="user">
 					<img src={profilePic} alt="user avatar" />
@@ -47,6 +33,7 @@ function Photo(props) {
 					</div>
 				</div>
 			</div>
+			<img className="foto-image" src={props.image} alt="foto" />
 		</div>
 	);
 }

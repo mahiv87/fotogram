@@ -2,12 +2,21 @@
 $font: 24px;
 
 .foto-container {
+	height: 100vh;
+	background-color: rgba(33, 33, 33, 0.5);
+	backdrop-filter: blur(5px);
 	display: flex;
 	justify-content: center;
-	margin-top: 1rem;
+
+	.foto-image {
+		height: 800px;
+		align-self: center;
+	}
 
 	.foto-side {
-		padding: 0 1rem;
+		margin: 0 1rem;
+		padding: 1rem;
+		background-color: black;
 
 		.user {
 			display: flex;
@@ -34,7 +43,7 @@ $font: 24px;
 
 			.foto-meta {
 				span {
-					color: #757575;
+					color: #858585;
 					padding-left: 1rem;
 				}
 			}
