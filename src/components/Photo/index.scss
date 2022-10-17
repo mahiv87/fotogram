@@ -3,9 +3,12 @@ $font: 16px;
 $black: #000;
 
 // Mixin
-// @mixin foto($ratio) {
-// 	@if $ratio ;
-// }
+@mixin mQ($arg) {
+	@media screen and (max-width: $arg) {
+		@content;
+	}
+}
+// End Mixin
 
 .foto-container {
 	height: 100vh;
@@ -13,6 +16,16 @@ $black: #000;
 	backdrop-filter: blur(5px);
 	display: flex;
 	justify-content: center;
+	@include mQ(480px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	@include mQ(768px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
 
 	.foto-image {
 		height: 600px;
@@ -23,6 +36,14 @@ $black: #000;
 		margin: 0 1rem;
 		padding: 1rem;
 		background-color: $black;
+		@include mQ(480px) {
+			width: 100%;
+			overflow: scroll;
+		}
+		@include mQ(768px) {
+			width: 100%;
+			overflow: scroll;
+		}
 
 		.user {
 			display: flex;
