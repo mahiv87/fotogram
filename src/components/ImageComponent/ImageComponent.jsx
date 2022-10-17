@@ -9,12 +9,14 @@ function ImageComponent(props) {
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
+	const truncate = (input) => (input?.length > 50 ? `${input.substring(0, 45)}...` : input);
+
 	return (
 		<div>
 			<div onClick={handleOpen} className="image-link">
 				<img className="image" src={props.image} alt="random image" />
 				<div className="image-info">
-					<span className="image-description">{props.description}</span>
+					<span className="image-description">{truncate(props.description)} </span>
 					<span className="image-date">{props.date}</span>
 				</div>
 			</div>
