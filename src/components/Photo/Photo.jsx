@@ -20,14 +20,14 @@ function Photo(props) {
 
 	return (
 		<div className="foto-container">
-			<img src={image.image} alt="foto" />
+			<img src={props.image} alt="foto" />
 			<div className="foto-side">
 				<div className="user">
 					<img src={profilePic} alt="user avatar" />
 					<p>Marcus Herrera</p>
 				</div>
 				<div className="foto-info">
-					<p className="foto-description">{image.description}</p>
+					<p className="foto-description">{props.description}</p>
 					<div className="foto-meta">
 						<p className="foto-tags">
 							<Label /> <span>Landscape, Travel</span>
@@ -42,7 +42,7 @@ function Photo(props) {
 							<Exposure /> <span>24mm ƒ/8.0, 1/250s, ISO 100</span>
 						</p>
 						<p className="single-date">
-							<CalendarToday /> <span>{image.date}</span>
+							<CalendarToday /> <span>{props.date}</span>
 						</p>
 					</div>
 				</div>
