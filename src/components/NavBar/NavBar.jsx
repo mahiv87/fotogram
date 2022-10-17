@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Upload } from '@mui/icons-material';
+import { Cookie, Upload } from '@mui/icons-material';
 import Modal from '@mui/material/Modal';
 
 import './index.css';
@@ -12,6 +12,8 @@ function NavBar(props) {
 
 	return (
 		<div className="nav-bar">
+			<Cookie />
+			<h1 className="title">Fotogram</h1>
 			<div className="upload" onClick={handleOpen}>
 				<Upload className="upload-icon" />
 			</div>
