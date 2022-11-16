@@ -19,9 +19,9 @@ const useFetch = (url) => {
 				setError(error);
 				setLoading(false);
 			}
-
-			fetchData();
 		};
+
+		fetchData();
 	}, [url]);
 
 	return { loading, error, data };

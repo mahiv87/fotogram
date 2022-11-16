@@ -29,7 +29,7 @@ function App() {
 		// 	</Routes>
 		// </Router>
 		<div className="App">
-			<NavBar />
+			{/* <NavBar /> */}
 			{/* <Photo /> */}
 			<Profile />
 		</div>

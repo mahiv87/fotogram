@@ -1,4 +1,5 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch';
 
 import ImageComponent from '../../components/ImageComponent/ImageComponent';
 import './index.css';
@@ -85,6 +86,13 @@ const randomImages = [
 ];
 
 function Profile() {
+	const { loading, error, data } = useFetch('http://localhost:1337/api/photos?populate=*');
+	// console.log([data]);
+	let photos = [data];
+
+	if (loading) return <p>Loading...</p>;
+	if (error) return <p>Error...</p>;
+
 	return (
 		<div className="container">
 			<div className="sidebar">
@@ -99,9 +107,13 @@ function Profile() {
 			<div className="gallery-container">
 				<div className="gallery-column">
 					<div className="image-container">
-						{randomImages &&
-							randomImages.map((image) => (
-								<ImageComponent image={image.image} description={image.description} date={image.date} />
+						{photos &&
+							photos.map((photo) => (
+								<ImageComponent
+									image={'http://localhost:1337' + photo.data[0].attributes.image.data.attributes.url}
+									description={photo.data[0].attributes.description}
+									date={photo.data[0].attributes.createdAt}
+								/>
 							))}
 					</div>
 				</div>
