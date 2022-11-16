@@ -4,7 +4,8 @@
   "info": {
     "singularName": "photo",
     "pluralName": "photos",
-    "displayName": "Photo"
+    "displayName": "Photo",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,20 +18,26 @@
       "minLength": 4
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "title": {
       "type": "string",
       "maxLength": 30,
       "minLength": 4,
       "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
