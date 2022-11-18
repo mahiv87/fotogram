@@ -4,7 +4,7 @@ import { CameraAlt, Camera, CalendarToday, Exposure, Label } from '@mui/icons-ma
 import './index.css';
 import profilePic from '../../assets/me.png';
 
-function Photo(props) {
+function Photo({ image, description, date, close }) {
 	return (
 		<div className="foto-container">
 			<div className="foto-side">
@@ -13,7 +13,7 @@ function Photo(props) {
 					<h2>Marcus Herrera</h2>
 				</div>
 				<div className="foto-info">
-					<p className="foto-description">{props.description}</p>
+					<p className="foto-description">{description}</p>
 					<div className="foto-meta">
 						<p className="foto-tags">
 							<Label /> <span>Landscape, Travel</span>
@@ -28,12 +28,12 @@ function Photo(props) {
 							<Exposure /> <span>24mm ƒ/8.0, 1/250s, ISO 100</span>
 						</p>
 						<p className="single-date">
-							<CalendarToday /> <span>{props.date}</span>
+							<CalendarToday /> <span>{date}</span>
 						</p>
 					</div>
 				</div>
 			</div>
-			<img className="foto-image" src={props.image} alt="foto" onClick={props.close} />
+			<img className="foto-image" src={image} alt="foto" onClick={close} />
 		</div>
 	);
 }

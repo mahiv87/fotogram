@@ -5,86 +5,87 @@ import ImageComponent from '../../components/ImageComponent/ImageComponent';
 import './index.css';
 import profilePic from '../../assets/me.png';
 
-let date = new Date(Date.now()).toLocaleString();
+// let date = new Date(Date.now()).toLocaleString();
 
-const randomImages = [
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!1',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!2',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!3',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!4',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!5',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!6',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!7',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!8',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!9',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!10',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!11',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!12',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!13',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/400/600?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!14',
-		date: `${date}`
-	},
-	{
-		image: `https://picsum.photos/600/400?random=${Math.random()}`,
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!15',
-		date: `${date}`
-	}
-];
+// const randomImages = [
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!1',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!2',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!3',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!4',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!5',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!6',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!7',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!8',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!9',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!10',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!11',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!12',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!13',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/400/600?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!14',
+// 		date: `${date}`
+// 	},
+// 	{
+// 		image: `https://picsum.photos/600/400?random=${Math.random()}`,
+// 		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint voluptatibus qui!15',
+// 		date: `${date}`
+// 	}
+// ];
 
+// GraphQl queries
 const PHOTOS = gql`
 	query GetPhotos {
 		photos {
@@ -93,6 +94,7 @@ const PHOTOS = gql`
 				attributes {
 					description
 					title
+					createdAt
 					image {
 						data {
 							attributes {
@@ -111,8 +113,6 @@ function Profile() {
 
 	if (loading) return <p>Loading...</p>;
 	if (error) return <p>Error...</p>;
-
-	console.log(data.photos);
 
 	return (
 		<div className="container">
