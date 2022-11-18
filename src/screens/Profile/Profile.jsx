@@ -89,6 +89,7 @@ function Profile() {
 	const { loading, error, data } = useFetch('http://localhost:1337/api/photos?populate=*');
 	// console.log([data]);
 	let photos = [data];
+	console.log(photos);
 
 	if (loading) return <p>Loading...</p>;
 	if (error) return <p>Error...</p>;
