@@ -21,7 +21,9 @@ function ImageComponent({ image, description, date }) {
 				</div>
 			</div>
 			<Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-				<Photo image={image} description={description} date={date} close={handleClose} />
+				<div>
+					<Photo image={image} description={description} date={date} close={handleClose} />
+				</div>
 			</Modal>
 		</div>
 	);
