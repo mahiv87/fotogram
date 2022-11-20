@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { FileUploader } from 'react-drag-drop-files';
 import { Close } from '@mui/icons-material';
+import { useQuery, gql } from '@apollo/client';
 
 import './index.css';
 
 const fileTypes = ['JPEG', 'PNG', 'GIF'];
 
+// const UPLOAD_PHOTO = gql`
+
+// `;
+
 function Uploader(props) {
+	// const { loading, error, data } = useQuery(UPLOAD_PHOTO);
 	const [file, setFile] = useState(null);
 	const handleChange = (file) => {
 		setFile(file);

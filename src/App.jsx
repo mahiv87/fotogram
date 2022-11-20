@@ -37,7 +37,7 @@ function App() {
 		// </Router>
 		<ApolloProvider client={client}>
 			<div className="App">
-				{/* <NavBar /> */}
+				<NavBar />
 				{/* <Photo /> */}
 				<Profile />
 			</div>
