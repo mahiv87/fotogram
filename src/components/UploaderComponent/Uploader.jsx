@@ -5,7 +5,7 @@ import { useQuery, gql } from '@apollo/client';
 
 import './index.css';
 
-const fileTypes = ['JPEG', 'PNG', 'GIF'];
+const fileTypes = ['JPG', 'PNG', 'GIF'];
 
 // const UPLOAD_PHOTO = gql`
 
