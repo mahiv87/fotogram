@@ -30,6 +30,7 @@ A photo portfolio built with React, and utilizes Strapi CMS.
 - Node.js
 - ReactJs
 - Strapi CMS
+- Sass
 
 ## Installation
 
