@@ -43,8 +43,8 @@ function Profile() {
 				<h2 className="title">Marcus Herrera</h2>
 				<h5 className="username">@mahiv87</h5>
 				<p className="bio">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vel repudiandae molestiae facere optio labore
-					voluptates.
+					Denver based photographer. Thanks for coming! I hope you enjoy your
+					stay :)
 				</p>
 			</div>
 			<div className="gallery-container">
@@ -54,7 +54,10 @@ function Profile() {
 							data.photos.data.map((photo) => (
 								<ImageComponent
 									key={photo.id}
-									image={'http://localhost:1337' + photo.attributes.image.data.attributes.url}
+									image={
+										'http://localhost:1337' +
+										photo.attributes.image.data.attributes.url
+									}
 									description={photo.attributes.description}
 									date={photo.attributes.createdAt}
 								/>
