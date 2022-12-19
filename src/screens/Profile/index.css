@@ -1,11 +1,13 @@
 .container {
   display: flex;
+  height: calc(100vh - 84px);
 }
 @media screen and (max-width: 480px) {
   .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
   }
 }
 .container .gallery-container {
