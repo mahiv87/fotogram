@@ -6,6 +6,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Photo from './components/Photo/Photo';
 import Profile from './screens/Profile/Profile';
+import Footer from './components/Footer/Footer';
 
 // apollo client
 const client = new ApolloClient({
@@ -19,6 +20,7 @@ function App() {
 			<div className="App">
 				<NavBar />
 				<Profile />
+				<Footer />
 			</div>
 		</ApolloProvider>
 	);
