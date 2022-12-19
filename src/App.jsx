@@ -15,30 +15,9 @@ const client = new ApolloClient({
 
 function App() {
 	return (
-		// <Router>
-		// 	<Routes>
-		// 		<Route
-		// 			path="/"
-		// 			element={
-		// 				<>
-		// 					<Profile />
-		// 				</>
-		// 			}
-		// 		/>
-		// 		<Route
-		// 			path="/foto"
-		// 			element={
-		// 				<>
-		// 					<Photo />
-		// 				</>
-		// 			}
-		// 		/>
-		// 	</Routes>
-		// </Router>
 		<ApolloProvider client={client}>
 			<div className="App">
 				<NavBar />
-				{/* <Photo /> */}
 				<Profile />
 			</div>
 		</ApolloProvider>

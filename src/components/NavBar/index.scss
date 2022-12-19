@@ -8,8 +8,15 @@
 		margin: 0 1rem;
 	}
 
+	.tagline {
+		align-self: flex-end;
+		font-size: 10px;
+		font-style: italic;
+		color: gray;
+		margin: 5px 5px;
+	}
+
 	.title {
 		font-weight: 300;
-		margin-right: 1rem;
 	}
 }
