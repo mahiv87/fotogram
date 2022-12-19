@@ -15,7 +15,7 @@ function NavBar(props) {
 			<Cookie />
 			<h1 className="title">Fotogram</h1>
 			<div className="upload" onClick={handleOpen}>
-				<Upload className="upload-icon" />
+				{/* <Upload className="upload-icon" /> */}
 			</div>
 			<Modal
 				open={open}
