@@ -43,8 +43,10 @@ function Profile() {
 				<h2 className="title">Marcus Herrera</h2>
 				<h5 className="username">@mahiv87</h5>
 				<p className="bio">
-					Denver based photographer. Thanks for coming! I hope you enjoy your
-					stay :)
+					Hi there 👋 I'm a hobbyist photographer based in Denver, Colorado. I'm
+					passionate about capturing moments in time and have been taking photos
+					for years. I find inspiration in the natural beauty of Colorado,
+					particularly in the mountains and landscapes that surround me.
 				</p>
 			</div>
 			<div className="gallery-container">
