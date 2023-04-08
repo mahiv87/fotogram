@@ -10,7 +10,7 @@ import profilePic from '../../assets/me.png';
 // GraphQl queries
 const PHOTOS = gql`
 	query GetPhotos {
-		photos {
+		photos(pagination: { limit: 100 }) {
 			data {
 				id
 				attributes {
