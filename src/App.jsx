@@ -18,9 +18,9 @@ function App() {
 	return (
 		<ApolloProvider client={client}>
 			<div className="App">
-				<NavBar />
+				{/* <NavBar /> */}
 				<Profile />
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		</ApolloProvider>
 	);
