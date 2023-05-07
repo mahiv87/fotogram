@@ -1,9 +1,16 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 import ImageComponent from '../../components/ImageComponent/ImageComponent';
 import './index.css';
 import profilePic from '../../assets/me.png';
+import loader from '../../assets/loader.json';
+
+const ImageMotionComponent = motion(ImageComponent, {
+	forwardMotionProps: true
+});
 
 // let date = new Date(Date.now()).toLocaleString();
 
@@ -33,8 +40,18 @@ const PHOTOS = gql`
 function Profile() {
 	const { loading, error, data } = useQuery(PHOTOS);
 
-	if (loading) return <p>Loading...</p>;
-	if (error) return <p>Error...</p>;
+	if (loading)
+		return (
+			<div className="loader-container">
+				<Player
+					autoplay
+					loop
+					src={loader}
+					style={{ height: '300px', width: '300px' }}
+				/>
+			</div>
+		);
+	// if (error) return <p>Error...</p>;
 
 	return (
 		<div className="container">
@@ -54,8 +71,9 @@ function Profile() {
 					<div className="image-container">
 						{data &&
 							data.photos.data.map((photo) => (
-								<ImageComponent
+								<ImageMotionComponent
 									key={photo.id}
+									photoId={photo.id}
 									image={
 										'http://localhost:1337' +
 										photo.attributes.image.data.attributes.url

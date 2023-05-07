@@ -6,6 +6,13 @@
 }
 // End Mixin
 
+.loader-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
 	display: flex;
 	height: calc(100vh - 84px);
