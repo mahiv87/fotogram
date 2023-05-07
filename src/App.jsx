@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer';
 
 // apollo client
 const client = new ApolloClient({
-	uri: 'http://localhost:1337/graphql',
+	uri: 'https://fotogram-portfolio.herokuapp.com/graphql',
 	cache: new InMemoryCache()
 });
 

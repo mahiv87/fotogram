@@ -75,7 +75,7 @@ function Profile() {
 									key={photo.id}
 									photoId={photo.id}
 									image={
-										'http://localhost:1337' +
+										'https://fotogram-portfolio.herokuapp.com' +
 										photo.attributes.image.data.attributes.url
 									}
 									description={photo.attributes.description}
