@@ -1,38 +1,38 @@
 .image-link {
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 5px;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	margin-bottom: 5px;
+	-moz-column-break-inside: avoid;
+	break-inside: avoid;
 }
 .image-link .image {
-  grid-row: 1/-1;
-  grid-column: 1;
-  width: 100%;
+	grid-row: 1/-1;
+	grid-column: 1;
+	width: 100%;
 }
 .image-link .image-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  gap: 4px;
-  width: 100%;
-  opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	gap: 4px;
+	width: 100%;
+	opacity: 0;
 }
 .image-link .image-info .image-date {
-  font-size: 12px;
+	font-size: 12px;
 }
 .image-link .image-info:hover {
-  background: linear-gradient(transparent, transparent 70%, rgba(0, 0, 0, 0.8));
-  color: #fff;
-  justify-content: flex-end;
-  opacity: 0;
-  padding: 0 16px 20px;
-  right: 0;
-  opacity: 1;
-}/*# sourceMappingURL=Index.css.map */
+	background: linear-gradient(transparent, transparent 70%, rgba(0, 0, 0, 0.8));
+	color: #fff;
+	justify-content: flex-end;
+	opacity: 0;
+	padding: 0 16px 20px;
+	right: 0;
+	opacity: 1;
+} /*# sourceMappingURL=Index.css.map */
