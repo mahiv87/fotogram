@@ -9,7 +9,8 @@ function ImageComponent({ image, description, date }) {
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
-	const truncate = (input) => (input?.length > 50 ? `${input.substring(0, 45)}...` : input);
+	const truncate = (input) =>
+		input?.length > 50 ? `${input.substring(0, 45)}...` : input;
 
 	return (
 		<div>
@@ -20,9 +21,18 @@ function ImageComponent({ image, description, date }) {
 					<span className="image-date">{date}</span>
 				</div>
 			</div>
-			<Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+			<Modal
+				open={open}
+				aria-labelledby="modal-modal-title"
+				aria-describedby="modal-modal-description"
+			>
 				<div>
-					<Photo image={image} description={description} date={date} close={handleClose} />
+					<Photo
+						image={image}
+						description={description}
+						date={date}
+						close={handleClose}
+					/>
 				</div>
 			</Modal>
 		</div>

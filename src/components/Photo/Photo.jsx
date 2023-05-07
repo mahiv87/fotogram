@@ -1,5 +1,11 @@
 import React from 'react';
-import { CameraAlt, Camera, CalendarToday, Exposure, Label } from '@mui/icons-material';
+import {
+	CameraAlt,
+	Camera,
+	CalendarToday,
+	Exposure,
+	Label
+} from '@mui/icons-material';
 
 import './index.css';
 import profilePic from '../../assets/me.png';
@@ -7,7 +13,7 @@ import profilePic from '../../assets/me.png';
 function Photo({ image, description, date, close }) {
 	return (
 		<div className="foto-container">
-			<div className="foto-side">
+			{/* <div className="foto-side">
 				<div className="user">
 					<img src={profilePic} alt="user avatar" />
 					<h2>Marcus Herrera</h2>
@@ -32,7 +38,7 @@ function Photo({ image, description, date, close }) {
 						</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<img className="foto-image" src={image} alt="foto" onClick={close} />
 		</div>
 	);
