@@ -4,6 +4,8 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"dev": "concurrently \"cd backend && npm run develop\" \"vite\"",
 		"build": "vite build",
 		"preview": "vite preview"
@@ -21,7 +23,8 @@
 		"react-dom": "^18.2.0",
 		"react-drag-drop-files": "^2.3.7",
 		"react-router-dom": "^6.3.0",
-		"sass": "^1.54.0"
+		"sass": "^1.54.0",
+		"gh-pages": "^4.0.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.17",
