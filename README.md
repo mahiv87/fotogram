@@ -16,7 +16,7 @@
 
 ## Description
 
-A photo portfolio built with React, and utilizes Strapi CMS.
+A photo portfolio built with React that utilizes Strapi CMS backend, and AWS S3 for image storage.
 
 ## Screenshot
 
@@ -30,6 +30,7 @@ A photo portfolio built with React, and utilizes Strapi CMS.
 - Node.js
 - ReactJs
 - Strapi CMS
+- AWS S3
 - Sass
 
 ## Installation
