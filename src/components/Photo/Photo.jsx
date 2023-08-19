@@ -13,11 +13,11 @@ import profilePic from '../../assets/me.png';
 function Photo({ image, description, date, close }) {
 	return (
 		<div className="foto-container">
-			{/* <div className="foto-side">
-				<div className="user">
+			<div className="foto-side">
+				{/* <div className="user">
 					<img src={profilePic} alt="user avatar" />
 					<h2>Marcus Herrera</h2>
-				</div>
+				</div> */}
 				<div className="foto-info">
 					<p className="foto-description">{description}</p>
 					<div className="foto-meta">
@@ -38,7 +38,7 @@ function Photo({ image, description, date, close }) {
 						</p>
 					</div>
 				</div>
-			</div> */}
+			</div>
 			<img className="foto-image" src={image} alt="foto" onClick={close} />
 		</div>
 	);

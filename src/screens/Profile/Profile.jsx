@@ -37,6 +37,11 @@ const PHOTOS = gql`
 	}
 `;
 
+function formatCreatedAtDate(dateString) {
+	const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+	return new Intl.DateTimeFormat('en-US', options).format(new Date(dateString));
+}
+
 function Profile() {
 	const { loading, error, data } = useQuery(PHOTOS);
 
@@ -76,7 +81,7 @@ function Profile() {
 									photoId={photo.id}
 									image={photo.attributes.image.data.attributes.url}
 									description={photo.attributes.description}
-									date={photo.attributes.createdAt}
+									date={formatCreatedAtDate(photo.attributes.createdAt)}
 								/>
 							))}
 					</div>
