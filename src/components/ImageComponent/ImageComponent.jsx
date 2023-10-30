@@ -9,6 +9,10 @@ function ImageComponent({ image, description, date }) {
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
+	const formattedDate = new Date(date).toLocaleString('en-US', {
+		dateStyle: 'medium'
+	});
+
 	const truncate = (input) =>
 		input?.length > 50 ? `${input.substring(0, 45)}...` : input;
 
@@ -17,7 +21,6 @@ function ImageComponent({ image, description, date }) {
 		let large = 'large_';
 		let end = url.substr(50);
 		let result = `${start}${large}${end}`;
-		console.log(result);
 		return result;
 	};
 
@@ -27,7 +30,7 @@ function ImageComponent({ image, description, date }) {
 				<img className="image" src={largeImage(image)} alt="random image" />
 				<div className="image-info">
 					<span className="image-description">{truncate(description)} </span>
-					<span className="image-date">{date}</span>
+					<span className="image-date">{formattedDate}</span>
 				</div>
 			</div>
 			<Modal

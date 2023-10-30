@@ -12,8 +12,6 @@ const ImageMotionComponent = motion(ImageComponent, {
 	forwardMotionProps: true
 });
 
-// let date = new Date(Date.now()).toLocaleString();
-
 // GraphQl queries
 const PHOTOS = gql`
 	query GetPhotos {
@@ -87,5 +85,3 @@ function Profile() {
 }
 
 export default Profile;
-
-// "https://fotogrambucket.s3.us-west-1.amazonaws.com/fotogram_2_6aeb367fee.jpg"
