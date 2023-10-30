@@ -12,10 +12,19 @@ function ImageComponent({ image, description, date }) {
 	const truncate = (input) =>
 		input?.length > 50 ? `${input.substring(0, 45)}...` : input;
 
+	const largeImage = (url) => {
+		console.log(url);
+		let start = url.substr(0, 50);
+		let large = 'large_';
+		let end = url.substr(50);
+		let result = `${start}${large}${end}`;
+		return result;
+	};
+
 	return (
 		<div>
 			<div onClick={handleOpen} className="image-link">
-				<img className="image" src={image} alt="random image" />
+				<img className="image" src={largeImage(image)} alt="random image" />
 				<div className="image-info">
 					<span className="image-description">{truncate(description)} </span>
 					<span className="image-date">{date}</span>

@@ -74,7 +74,7 @@ function Profile() {
 								<ImageMotionComponent
 									key={photo.id}
 									photoId={photo.id}
-									image={photo.attributes.image.data.attributes.url}
+									image={photo.attributes.image.data.url}
 									description={photo.attributes.description}
 									date={photo.attributes.createdAt}
 								/>
@@ -87,3 +87,5 @@ function Profile() {
 }
 
 export default Profile;
+
+// "https://fotogrambucket.s3.us-west-1.amazonaws.com/fotogram_2_6aeb367fee.jpg"
