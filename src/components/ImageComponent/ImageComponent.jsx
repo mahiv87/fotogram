@@ -13,11 +13,11 @@ function ImageComponent({ image, description, date }) {
 		input?.length > 50 ? `${input.substring(0, 45)}...` : input;
 
 	const largeImage = (url) => {
-		console.log(url);
 		let start = url.substr(0, 50);
 		let large = 'large_';
 		let end = url.substr(50);
 		let result = `${start}${large}${end}`;
+		console.log(result);
 		return result;
 	};
 

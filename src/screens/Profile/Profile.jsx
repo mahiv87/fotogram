@@ -74,7 +74,7 @@ function Profile() {
 								<ImageMotionComponent
 									key={photo.id}
 									photoId={photo.id}
-									image={photo.attributes.image.data.url}
+									image={photo.attributes.image.data.attributes.url}
 									description={photo.attributes.description}
 									date={photo.attributes.createdAt}
 								/>
